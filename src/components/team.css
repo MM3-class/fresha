@@ -1,0 +1,6 @@
+@media only screen and (min-width: 768px) {
+    .team-medium .swiper-wrapper {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+}
