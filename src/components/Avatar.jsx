@@ -43,7 +43,7 @@ const Avatar = () => {
       </nav>
       <div className="top-0">
         <div className="hidden md:block">
-          <h1 className="text-4xl font-bold">Beauty Loft Salon</h1>
+          <h1 className="text-4xl font-bold lg:text-6xl">Beauty Loft Salon</h1>
           <div className="flex justify-between items-center">
             <div className="flex space-x-2 items-center pt-2 pb-4 mb-2 text-md font-semibold">
               <p>4.8</p>

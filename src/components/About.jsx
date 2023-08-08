@@ -56,7 +56,7 @@ const About = () => {
         </div>
       </div>
       <div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.178510207608!2d55.27180147452016!3d25.19720183170215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1ceb7e2!2sBurj%20Khalifa!5e0!3m2!1sen!2sae!4v1691354468141!5m2!1sen!2sae" className='w-full h-60 rounded-r-xl' />
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.178510207608!2d55.27180147452016!3d25.19720183170215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1ceb7e2!2sBurj%20Khalifa!5e0!3m2!1sen!2sae!4v1691354468141!5m2!1sen!2sae" className='w-full h-60 rounded-r-xl lg:h-[600px]' />
       </div>
       <div>
       <p className='inline-block pr-2'>UK, Cameo House, 11 Bear Street, London, England</p><a href="https://www.google.com/maps/place/Burj+Khalifa+-+1+Sheikh+Mohammed+bin+Rashid+Blvd+-+Downtown+Dubai+-+Dubai/@25.197197,55.2743764,17z/data=!4m14!1m7!3m6!1s0x3e5f43348a67e24b:0xff45e502e1ceb7e2!2sBurj+Khalifa+-+1+Sheikh+Mohammed+bin+Rashid+Blvd+-+Downtown+Dubai+-+Dubai!8m2!3d25.197197!4d55.2743764!16zL20vMDNjbjB2!3m5!1s0x3e5f43348a67e24b:0xff45e502e1ceb7e2!8m2!3d25.197197!4d55.2743764!16zL20vMDNjbjB2" target='_blank' className='text-blue-600 ' >Get directions</a>

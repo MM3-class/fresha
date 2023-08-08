@@ -19,7 +19,7 @@ body {
   }
 }
 @media screen and (min-width: 1024px) {
-  * {
-    font-size: 1.2rem !important;
+  nav {
+    font-size: 1.4rem !important;
   }
 }

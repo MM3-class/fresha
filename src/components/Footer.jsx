@@ -9,9 +9,9 @@ const Footer = () => {
           <button className='font-bold'>Get the app </button>
           <span>{<FaGoogle />}</span>
         </div>
-        <div className="space-y-8">
+        <div className="space-y-8 lg:flex lg:justify-around lg:text-2xl">
           <div>
-            <legend className='text-lg font-medium my-4'>About Fresha</legend>
+            <legend className='text-lg lg:text-2xl lg:font-bold font-medium my-4'>About Fresha</legend>
             <ul className='space-y-2'>
               <li><a href="#">Careers</a></li>
               <li><a href="#">Customer Support</a></li>
@@ -21,7 +21,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <legend className='text-lg font-medium my-4'>Legal</legend>
+            <legend className='text-lg lg:text-2xl lg:font-bold font-medium my-4'>Legal</legend>
             <ul className='space-y-2'>
               <li><a href="#">Privacy Policy</a></li>
               <li><a href="#">Terms of Service</a></li>
@@ -29,7 +29,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <legend className='text-lg font-medium my-4'>For buslness</legend>
+            <legend className='text-lg lg:text-2xl lg:font-bold font-medium my-4'>For buslness</legend>
             <ul className='space-y-2'>
               <li><a href="#">For partners</a></li>
               <li><a href="#">Pricing</a></li>
@@ -37,7 +37,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <legend className='text-lg font-medium my-4'>Find us on social</legend>
+            <legend className='text-lg lg:text-2xl lg:font-bold font-medium my-4'>Find us on social</legend>
             <ul className='space-y-2'>
               <li className='flex items-center space-x-2'>{<FaArrowUp />}<a href="#">Facebook</a></li>
               <li className='flex items-center space-x-2'>{<FaArrowUp />}<a href="#">Twitter</a></li>
