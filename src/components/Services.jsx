@@ -25,10 +25,8 @@ import { FaAngleLeft, FaAngleRight } from 'react-icons/fa'
 const Services = () => {
   return (
     <div className=''>
-      <h1 className='text-3xl my-5 mx-4 font-semiBold'>Services</h1>
+      <h1 className='text-3xl my-5 mx-4 font-semiBold  lg:text-5xl lg:font-bold'>Services</h1>
       <div className='relative'>
-
-
         <nav className='truncate overflow-hidden w-full relative'>
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}

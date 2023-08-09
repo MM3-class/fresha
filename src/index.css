@@ -11,10 +11,10 @@ body {
 }
 @media screen and (max-width: 1024px) {
 
-  .swiper-button-next { 
+  .swiper-button-next, .arrow-left { 
     display: none !important;
   }
-  .swiper-button-prev {
+  .swiper-button-prev, .arrow-right {
     display: none !important;
   }
 }
@@ -22,4 +22,7 @@ body {
   nav {
     font-size: 1.4rem !important;
   }
+}
+::-webkit-scrollbar {
+  background: transparent; 
 }

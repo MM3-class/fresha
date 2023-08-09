@@ -11,6 +11,9 @@ module.exports = {
         "user": "#6950F3"
       }
     },
+    scale: {
+      '200': '3',
+    }
   },
   plugins: [],
 }

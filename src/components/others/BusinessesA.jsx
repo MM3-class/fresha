@@ -11,7 +11,7 @@ import 'swiper/css/scrollbar';
 
 const BusinessesA = () => {
   return (
-    <div className='flex space-x-5 overflow-hidden truncate px-1'>
+    <div className='flex space-x-5 overflow-auto truncate px-1'>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
@@ -40,7 +40,7 @@ const BusinessesA = () => {
             <li><a href="#">Waxing Salons</a></li>
           </ul>
         </SwiperSlide>
-        <SwiperSlide className=' py-2'>
+        <SwiperSlide className='truncate py-2'>
           <ul className="space-y-2">
             <li><a href="#">Eyebrow Tinting</a></li>
             <li><a href="#">Hair Colouring</a></li>

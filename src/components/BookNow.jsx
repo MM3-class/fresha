@@ -2,7 +2,7 @@ import React from 'react'
 
 const BookNow = () => {
   return (
-    <aside className='flex justify-between shadow-md items-center py-4 px-5  border-t lg:hidden sticky bottom-0 bg-white top-0'>
+    <aside className='flex justify-between z-40 shadow-md items-center py-4 px-5  border-t lg:hidden sticky bottom-0 bg-white top-0'>
         <div className='text-secondary-color'>
             <p>95 services available</p>
         </div>

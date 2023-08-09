@@ -12,6 +12,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import "../components/avatar.css";
+import SearchTerm from "./searchTerm/SearchTerm";
 const starArray = [
   {
     "icon": <FaStar />
@@ -32,8 +33,11 @@ const starArray = [
 const Avatar = () => {
   return (
     <section className="md:px-8">
-      <nav className="overflow-hidden truncate">
-        <ul className='flex space-x-2 w-full mx-3 py-4 overflow-hidden'>
+      <div className="md:block hidden">
+        <SearchTerm />
+      </div>
+      <nav className="truncate">
+        <ul className='flex space-x-2 w-full mx-3 pb-0 pt-4 overflow-auto pr-9 md:hidden'>
           <li><a href="#">Home</a></li>
           <li><a href="#">Beauty Salons</a></li>
           <li><a href="#">London</a></li>
@@ -81,15 +85,15 @@ const Avatar = () => {
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
         >
-            <SwiperSlide className="grid-main">
-              <img className=" w-full h-96 md:h-[700px] object-cover" src={AVATAR1} alt="avatar1" />
-            </SwiperSlide>
-            <SwiperSlide className="grid-right-top">
-              <img className=" w-full h-96 md:h-[700px] object-cover" src={AVATAR2} alt="avatar2" />
-            </SwiperSlide>
-            <SwiperSlide className="grid-right-bottom">
-              <img className=" w-full h-96 md:h-[700px] object-cover" src={AVATAR3} alt="avatar3" />
-            </SwiperSlide>
+          <SwiperSlide className="grid-main">
+            <img className=" w-full h-96 md:h-[700px] object-cover" src={AVATAR1} alt="avatar1" />
+          </SwiperSlide>
+          <SwiperSlide className="grid-right-top">
+            <img className=" w-full h-96 md:h-[700px] object-cover" src={AVATAR2} alt="avatar2" />
+          </SwiperSlide>
+          <SwiperSlide className="grid-right-bottom">
+            <img className=" w-full h-96 md:h-[700px] object-cover" src={AVATAR3} alt="avatar3" />
+          </SwiperSlide>
         </Swiper>
       </div>
       <div className="py-4 px-5 font-semibold text-primary-color text-md">

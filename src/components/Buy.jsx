@@ -3,7 +3,7 @@ import React from 'react'
 const Buy = () => {
   return (
     <div className=' space-y-4'>
-      <h1 className='text-2xl font-bold'>Buy</h1>
+      <h1 className='text-2xl font-bold  lg:text-5xl'>Buy</h1>
       <div className='flex items-center justify-between'>
         <div>
         <p>Membership</p>

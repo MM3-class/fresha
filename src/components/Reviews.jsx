@@ -53,7 +53,7 @@ const Reviews = () => {
   ]
   return (
     <div className='space-y-8 border-b-2 pb-8'>
-      <h1 className='text-2xl font-bold'>Reviews</h1>
+      <h1 className='text-2xl font-bold  lg:text-5xl'>Reviews</h1>
       <div className="items-center space-x-1 mb-3 mt-2 space-y-4">
         <p className="flex items-center text-4xl">{starArray.map((star) => star.icon)}</p>
         <div className='flex items-center space-x-2 text-xl font-bold'>
@@ -74,7 +74,7 @@ const Reviews = () => {
             </div>
           </div>
           <div className='flex py-4'>{starArray.map((star) => <p className='px-1'>{star.icon}</p>)}</div>
-          <p className='truncate'>{user.comment}</p>
+          <p >{user.comment}</p>
         </div>
       ))}</div>
       <button className='border-2 text-primary-color text-md font-semibold py-3 px-6 rounded-lg text-center w-11/12'>See all</button>

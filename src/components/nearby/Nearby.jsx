@@ -21,23 +21,37 @@ const Nearby = () => {
   return (
     <div>
       <h1 className='text-3xl my-5 mx-4 font-semiBold'>Venues nearby</h1>
-      <div className="relative">
+      <div className="relative ">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={0}
           slidesPerView={4}
           slidesPerGroup= {4}
+          breakpoints={{
+            0: {
+              slidesPerView: 2,
+              slidesPerGroup: 2
+            },
+            768: {
+              slidesPerView: 3,
+              slidesPerGroup: 3
+            },
+            1025: {
+              slidesPerView: 4,
+              slidesPerGroup: 4
+            },
+          }}
           navigation={{ nextEl: ".arrow-left", prevEl: ".arrow-right" }}
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
         >
           <SwiperSlide className='truncate rounded-lg px-2 py-2'>
-          <div className="card border group rounded-xl w-fit md:h-80 md:w-80 h-80 flex flex-col justify-between">
+          <div className="card border group rounded-xl  w-46 md:h-80 md:w-70 h-60 flex flex-col justify-between">
             <div className="img w-full md:h-60 h-40 overflow-hidden">
               <img src={nearbyA} className="group-hover:scale-125 duration-700 object-cover w-full h-full rounded-t-xl" alt="nearby1" />
             </div>
             <div className="p-4 space-y-1">
-              <h3 className="text-md font-bold">Kohlbaa Beauty Salon</h3>
+              <h3 className="text-md font-bold truncate ">Kohlbaa Beauty Salon</h3>
               <div className="flex items-center">
                 <p>4.9</p>
                 <p className="pl-1">{<FaStar />}</p>
@@ -49,12 +63,12 @@ const Nearby = () => {
           </div>
           </SwiperSlide>
           <SwiperSlide className='truncate rounded-lg px-2 py-2'>
-          <div className="card border group rounded-xl w-fit md:h-80 md:w-80 h-80 flex flex-col justify-between">
+          <div className="card border group rounded-xl w-46 md:h-80 md:w-70 h-60 flex flex-col justify-between">
             <div className="img w-full md:h-60 h-40 overflow-hidden">
               <img src={nearbyB} className="group-hover:scale-125 duration-700 object-cover w-full h-full rounded-t-xl" alt="nearby1" />
             </div>
             <div className="p-4 space-y-1">
-              <h3 className="text-md font-bold">Kohlbaa Beauty Salon</h3>
+              <h3 className="text-md font-bold truncate ">Kohlbaa Beauty Salon</h3>
               <div className="flex items-center">
                 <p>4.9</p>
                 <p className="pl-1">{<FaStar />}</p>
@@ -66,12 +80,12 @@ const Nearby = () => {
           </div>
           </SwiperSlide>
           <SwiperSlide className='truncate rounded-lg px-2 py-2'>
-          <div className="card border group rounded-xl w-fit md:h-80 md:w-80 h-80 flex flex-col justify-between">
+          <div className="card border group rounded-xl md:h-80 md:w-70 w-46 h-60 flex flex-col justify-between">
             <div className="img w-full md:h-60 h-40 overflow-hidden">
               <img src={nearbyC} className="group-hover:scale-125 duration-700 object-cover w-full h-full rounded-t-xl" alt="nearby1" />
             </div>
             <div className="p-4 space-y-1">
-              <h3 className="text-md font-bold">Kohlbaa Beauty Salon</h3>
+              <h3 className="text-md font-bold truncate ">Kohlbaa Beauty Salon</h3>
               <div className="flex items-center">
                 <p>4.9</p>
                 <p className="pl-1">{<FaStar />}</p>
@@ -83,12 +97,12 @@ const Nearby = () => {
           </div>
           </SwiperSlide>
           <SwiperSlide className='truncate rounded-lg px-2 py-2'>
-          <div className="card border group rounded-xl w-fit md:h-80 md:w-80 h-80 flex flex-col justify-between">
+          <div className="card border group rounded-xl md:h-80 md:w-70 w-46 h-60 flex flex-col justify-between">
             <div className="img w-full md:h-60 h-40 overflow-hidden">
               <img src={nearbyD} className="group-hover:scale-125 duration-700 object-cover w-full h-full rounded-t-xl" alt="nearby1" />
             </div>
             <div className="p-4 space-y-1">
-              <h3 className="text-md font-bold">Kohlbaa Beauty Salon</h3>
+              <h3 className="text-md font-bold truncate ">Kohlbaa Beauty Salon</h3>
               <div className="flex items-center">
                 <p>4.9</p>
                 <p className="pl-1">{<FaStar />}</p>
@@ -100,12 +114,12 @@ const Nearby = () => {
           </div>
           </SwiperSlide>
           <SwiperSlide className='truncate rounded-lg px-2 py-2'>
-          <div className="card border group rounded-xl w-fit md:h-80 md:w-80 h-80 flex flex-col justify-between">
+          <div className="card border group rounded-xl md:h-80 md:w-70 w-46 h-60 flex flex-col justify-between">
             <div className="img w-full md:h-60 h-40 overflow-hidden">
               <img src={nearbyE} className="group-hover:scale-125 duration-700 object-cover w-full h-full rounded-t-xl" alt="nearby1" />
             </div>
             <div className="p-4 space-y-1">
-              <h3 className="text-md font-bold">Kohlbaa Beauty Salon</h3>
+              <h3 className="text-md font-bold truncate ">Kohlbaa Beauty Salon</h3>
               <div className="flex items-center">
                 <p>4.9</p>
                 <p className="pl-1">{<FaStar />}</p>
@@ -117,12 +131,12 @@ const Nearby = () => {
           </div>
           </SwiperSlide>
           <SwiperSlide className='truncate rounded-lg px-2 py-2'>
-          <div className="card border group rounded-xl w-fit md:h-80 md:w-80 h-80 flex flex-col justify-between">
+          <div className="card border group rounded-xl md:h-80 md:w-70 w-46 h-60 flex flex-col justify-between">
             <div className="img w-full md:h-60 h-40 overflow-hidden">
               <img src={nearbyF} className="group-hover:scale-125 duration-700 object-cover w-full h-full rounded-t-xl" alt="nearby1" />
             </div>
             <div className="p-4 space-y-1">
-              <h3 className="text-md font-bold">Kohlbaa Beauty Salon</h3>
+              <h3 className="text-md font-bold truncate ">Kohlbaa Beauty Salon</h3>
               <div className="flex items-center">
                 <p>4.9</p>
                 <p className="pl-1">{<FaStar />}</p>
@@ -134,12 +148,12 @@ const Nearby = () => {
           </div>
           </SwiperSlide>
           <SwiperSlide className='truncate rounded-lg px-2 py-2'>
-          <div className="card border group rounded-xl w-fit md:h-80 md:w-80 h-80 flex flex-col justify-between">
+          <div className="card border group rounded-xl md:h-80 md:w-70 w-46 h-60 flex flex-col justify-between">
             <div className="img w-full md:h-60 h-40 overflow-hidden">
               <img src={nearbyG} className="group-hover:scale-125 duration-700 object-cover w-full h-full rounded-t-xl" alt="nearby1" />
             </div>
             <div className="p-4 space-y-1">
-              <h3 className="text-md font-bold">Kohlbaa Beauty Salon</h3>
+              <h3 className="text-md font-bold truncate ">Kohlbaa Beauty Salon</h3>
               <div className="flex items-center">
                 <p>4.9</p>
                 <p className="pl-1">{<FaStar />}</p>
@@ -151,12 +165,12 @@ const Nearby = () => {
           </div>
           </SwiperSlide>
           <SwiperSlide className='truncate rounded-lg px-2 py-2'>
-          <div className="card border group rounded-xl w-fit md:h-80 md:w-80 h-80 flex flex-col justify-between">
+          <div className="card border group rounded-xl md:h-80 md:w-70 w-46 h-60 flex flex-col justify-between">
             <div className="img w-full md:h-60 h-40 overflow-hidden">
               <img src={nearbyU} className="group-hover:scale-125 duration-700 object-cover w-full h-full rounded-t-xl" alt="nearby1" />
             </div>
             <div className="p-4 space-y-1">
-              <h3 className="text-md font-bold">Kohlbaa Beauty Salon</h3>
+              <h3 className="text-md font-bold truncate ">Kohlbaa Beauty Salon</h3>
               <div className="flex items-center">
                 <p>4.9</p>
                 <p className="pl-1">{<FaStar />}</p>
