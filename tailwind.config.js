@@ -9,10 +9,10 @@ module.exports = {
         "primary-color": "#0D1619",
         "secondary-color": "#757676",
         "user": "#6950F3"
+      },
+      scale: {
+        '200': '3',
       }
-    },
-    scale: {
-      '200': '3',
     }
   },
   plugins: [],

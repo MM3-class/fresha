@@ -8,8 +8,8 @@ const SearchTerm = () => {
             <div className=''>
                 <h1 className='font-mono font-extrabold text-primary-color text-xl'>Fresha</h1>
             </div>
-            <div className=' '>
-                <input className=' transition-all duration-300 w-96 border p-2 focus:absolute top-5 z-30 outline-none rounded-xl focus:w-[calc(100%-0px)] mx-auto h-12 inset-0' type="text" placeholder='&#128269; Treatment or Venus' />
+            <div>
+                <input className=' transition-all duration-700 md:w-[700px] border p-2 w-96 md:py-8 md:px-4 focus:absolute top-5 z-30 outline-none rounded-3xl focus:w-[calc(100%-0px)] mx-auto h-12 inset-0 hover:bg-gray-100' type="text" placeholder='&#128269; Treatment or Venus' />
             </div>
             <div onClick={() => setIsMenuShow((prev) => !prev)} className='lg:hidden active:outline'>
                 <FaBars />

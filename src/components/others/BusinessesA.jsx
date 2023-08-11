@@ -8,15 +8,31 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 const BusinessesA = () => {
   return (
-    <div className='flex space-x-5 overflow-auto truncate px-1'>
+    <div className='flex space-x-5 overflow-auto truncate relative px-20'>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={50}
-        slidesPerView={3}
-        navigation
+        spaceBetween={0}
+        slidesPerView={4}
+        slidesPerGroup={4}
+        breakpoints={{
+          0: {
+            slidesPerView: 2,
+            slidesPerGroup: 2
+          },
+          768: {
+            slidesPerView: 3,
+            slidesPerGroup: 3
+          },
+          1025: {
+            slidesPerView: 4,
+            slidesPerGroup: 4
+          },
+        }}
+        navigation={{ nextEl: ".arrow-left", prevEl: ".arrow-right" }}
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
       >
@@ -71,6 +87,8 @@ const BusinessesA = () => {
           </ul>
         </SwiperSlide>
       </Swiper>
+      <div className="arrow-left arrow absolute left-0 border p-3 text-secondary-color bg-white font-thin rounded-full top-1/2 -translate-y-1/2 z-20 text-2xl"><FaArrowLeft /></div>
+      <div className="arrow-right arrow absolute right-0 border p-3 text-secondary-color bg-white font-thin rounded-full top-1/2 -translate-y-1/2 z-20 text-2xl"><FaArrowRight /></div>
     </div>
   )
 }
