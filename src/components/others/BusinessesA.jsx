@@ -12,7 +12,7 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 const BusinessesA = () => {
   return (
-    <div className='flex space-x-5 overflow-auto truncate relative px-20'>
+    <div className='flex space-x-5 overflow-auto truncate relative md:px-20'>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={0}
@@ -32,7 +32,7 @@ const BusinessesA = () => {
             slidesPerGroup: 4
           },
         }}
-        navigation={{ nextEl: ".arrow-left", prevEl: ".arrow-right" }}
+        navigation={{ nextEl: ".arrow-l", prevEl: ".arrow-r" }}
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
       >
@@ -56,14 +56,14 @@ const BusinessesA = () => {
             <li><a href="#">Waxing Salons</a></li>
           </ul>
         </SwiperSlide>
-        <SwiperSlide className='truncate py-2'>
+        <SwiperSlide className='truncate py-2 pr-2'>
           <ul className="space-y-2">
             <li><a href="#">Eyebrow Tinting</a></li>
             <li><a href="#">Hair Colouring</a></li>
             <li><a href="#">Pedicures</a></li>
             <li><a href="#">Gel Nails</a></li>
             <li><a href="#">Face Waxing</a></li>
-            <li><a href="#">Blow Dries and Blowouts</a></li>
+            <li className='truncate'><a href="#">Blow Dries and Blowouts</a></li>
           </ul>
         </SwiperSlide>
         <SwiperSlide className=' py-2'>
@@ -82,13 +82,13 @@ const BusinessesA = () => {
             <li><a href="#">Leg Waxing</a></li>
             <li><a href="#">Brow Lamination</a></li>
             <li><a href="#">Hollywood Waxing</a></li>
-            <li><a href="#">Lash Lift and Tint Treatments</a></li>
-            <li><a href="#">Bikini Waxing</a></li>
+            <li className='truncate'><a href="#">Lash Lift and Tint Treatments</a></li>
+            <li className=' truncate'><a href="#">Bikini Waxing</a></li>
           </ul>
         </SwiperSlide>
       </Swiper>
-      <div className="arrow-left arrow absolute left-0 border p-3 text-secondary-color bg-white font-thin rounded-full top-1/2 -translate-y-1/2 z-20 text-2xl"><FaArrowLeft /></div>
-      <div className="arrow-right arrow absolute right-0 border p-3 text-secondary-color bg-white font-thin rounded-full top-1/2 -translate-y-1/2 z-20 text-2xl"><FaArrowRight /></div>
+      <div className="arrow-l arrow absolute left-0 border p-3 text-secondary-color bg-white font-thin rounded-full top-1/2 -translate-y-1/2 z-20 text-2xl"><FaArrowLeft /></div>
+      <div className="arrow-r arrow absolute right-0 border p-3 text-secondary-color bg-white font-thin rounded-full top-1/2 -translate-y-1/2 z-20 text-2xl"><FaArrowRight /></div>
     </div>
   )
 }
