@@ -12,7 +12,7 @@ body {
 
 @media screen and (max-width: 1024px) {
 
-  .swiper-button-next, .arrow-left { 
+  .swiper-button-next, .arrow-left, .arrow-l, .arrow-r { 
     display: none !important;
   }
   .swiper-button-prev, .arrow-right {
